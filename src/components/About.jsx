@@ -40,9 +40,10 @@ const About = () => {
                         transition={{ delay: 0.2 }}
                         className="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed"
                     >
-                        I am a results-driven Engineering Professional with a strong background in IT and problem-solving.
-                        My passion lies in bridging the gap between complex technological challenges and elegant,
-                        efficient solutions that drive impact.
+                        I am an Artificial Intelligence and Data Science student at AVS Engineering College, Salem.
+                        Currently in my III-Year (2023-2027), I am passionate about data-driven insights and
+                        intelligent systems. Born on October 15, 2005, and hailing from Nagapattinam, I am
+                        dedicated to mastering the field of engineering through innovation and precision.
                     </motion.p>
                 </div>
 

@@ -4,13 +4,13 @@ import { Phone, Mail, Linkedin, Github, Send } from 'lucide-react';
 
 const Contact = () => {
     const contactInfo = [
-        { icon: <Phone className="text-primary" />, label: "Phone", value: "+1 (234) 567-890", href: "tel:+1234567890" },
-        { icon: <Mail className="text-primary" />, label: "Email", value: "john.doe@engineering.com", href: "mailto:john.doe@engineering.com" },
+        { icon: <Phone className="text-primary" />, label: "Phone", value: "6379855062", href: "tel:+916379855062" },
+        { icon: <Mail className="text-primary" />, label: "Email", value: "s46dhanush2005@gmail.com", href: "mailto:s46dhanush2005@gmail.com" },
     ];
 
     const socials = [
-        { icon: <Linkedin size={24} />, href: "https://linkedin.com", label: "LinkedIn" },
-        { icon: <Github size={24} />, href: "https://github.com", label: "GitHub" },
+        { icon: <Linkedin size={24} />, href: "https://www.linkedin.com/in/dhanush-s-47830a2a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", label: "LinkedIn" },
+        { icon: <Github size={24} />, href: "https://github.com/dhanushsakthi/personal-portfolio", label: "GitHub" },
     ];
 
     return (

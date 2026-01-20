@@ -17,10 +17,10 @@ const Hero = () => {
                         Welcome to my professional space
                     </h2>
                     <h1 className="text-5xl md:text-8xl font-black mb-6 leading-tight">
-                        I'm <span className="bg-gradient-to-r from-blue-400 to-indigo-600 bg-clip-text text-transparent">John Doe</span>
+                        I'm <span className="bg-gradient-to-r from-blue-400 to-indigo-600 bg-clip-text text-transparent">S.DHANUSH</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                        Engineering Professional specializing in building robust, scalable solutions and solving complex technical challenges.
+                        Artificial Intelligence and Data Science Student at AVS Engineering College, Salem. (2023-2027)
                     </p>
                 </motion.div>
 

@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="text-center md:text-left">
                         <h3 className="text-xl font-bold bg-gradient-to-r from-white to-primary bg-clip-text text-transparent mb-2">
-                            John Doe
+                            S.DHANUSH
                         </h3>
                         <p className="text-slate-500 text-sm italic">
                             "Engineering excellence through innovation and precision."
@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
 
                     <div className="text-slate-500 text-sm">
-                        © {new Date().getFullYear()} John Doe. All rights reserved.
+                        © {new Date().getFullYear()} S.DHANUSH. All rights reserved.
                     </div>
                 </div>
             </div>

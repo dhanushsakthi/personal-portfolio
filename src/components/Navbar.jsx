@@ -27,8 +27,8 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
                     <div className="flex items-center space-x-2">
                         <Rocket className="text-primary w-8 h-8" />
-                        <span className="text-2xl font-bold bg-gradient-to-r from-white to-primary bg-clip-text text-transparent">
-                            Portfolio
+                        <span className="text-2xl font-bold bg-gradient-to-r from-white to-primary bg-clip-text text-transparent uppercase tracking-tighter">
+                            S.DHANUSH
                         </span>
                     </div>
 
