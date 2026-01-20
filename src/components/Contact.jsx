@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, Linkedin, Github, Send } from 'lucide-react';
+import { Phone, Mail, Linkedin, Github, Send, Instagram } from 'lucide-react';
 
 const Contact = () => {
     const contactInfo = [
@@ -11,6 +11,7 @@ const Contact = () => {
     const socials = [
         { icon: <Linkedin size={24} />, href: "https://www.linkedin.com/in/dhanush-s-47830a2a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", label: "LinkedIn" },
         { icon: <Github size={24} />, href: "https://github.com/dhanushsakthi/personal-portfolio", label: "GitHub" },
+        { icon: <Instagram size={24} />, href: "https://www.linkedin.com/in/dhanush-s-47830a2a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", label: "Instagram" },
     ];
 
     return (
