@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Download, Mail } from 'lucide-react';
 
+import MagneticEffect from './MagneticEffect';
+
 const Hero = () => {
     return (
         <section id="home" className="relative min-height-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
@@ -30,21 +32,25 @@ const Hero = () => {
                     transition={{ delay: 0.5, duration: 1 }}
                     className="flex flex-col sm:flex-row items-center justify-center gap-4"
                 >
-                    <a
-                        href="/resume.pdf"
-                        download
-                        className="btn-primary flex items-center gap-2 group"
-                    >
-                        <Download size={20} className="group-hover:translate-y-1 transition-transform" />
-                        Download Resume
-                    </a>
-                    <a
-                        href="#contact"
-                        className="btn-outline flex items-center gap-2"
-                    >
-                        <Mail size={20} />
-                        Contact Me
-                    </a>
+                    <MagneticEffect>
+                        <a
+                            href="/resume.pdf"
+                            download
+                            className="btn-primary flex items-center gap-2 group"
+                        >
+                            <Download size={20} className="group-hover:translate-y-1 transition-transform" />
+                            Download Resume
+                        </a>
+                    </MagneticEffect>
+                    <MagneticEffect>
+                        <a
+                            href="#contact"
+                            className="btn-outline flex items-center gap-2"
+                        >
+                            <Mail size={20} />
+                            Contact Me
+                        </a>
+                    </MagneticEffect>
                 </motion.div>
             </div>
 

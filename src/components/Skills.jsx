@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Database, Cloud, Terminal, Cpu, Shield, Download } from 'lucide-react';
 
+import MagneticEffect from './MagneticEffect';
+
 const Skills = () => {
     const skills = [
         { name: "Full Stack Development", desc: "Building responsive web applications using React, Node.js, and modern tools.", icon: <Code className="text-primary" /> },
@@ -68,14 +70,16 @@ const Skills = () => {
                                 className="bg-slate-800/40 p-6 rounded-xl border border-slate-700/50 flex flex-col sm:flex-row items-center gap-6 hover:border-primary/30 transition-all"
                             >
                                 <span className="text-lg font-medium text-slate-300">{cert.title}</span>
-                                <a
-                                    href={`/certificates/${cert.file}`}
-                                    download
-                                    className="flex items-center gap-2 text-primary hover:text-accent font-semibold group"
-                                >
-                                    <Download size={18} className="group-hover:translate-y-1 transition-transform" />
-                                    Download
-                                </a>
+                                <MagneticEffect strength={0.2}>
+                                    <a
+                                        href={`/certificates/${cert.file}`}
+                                        download
+                                        className="flex items-center gap-2 text-primary hover:text-accent font-semibold group p-1"
+                                    >
+                                        <Download size={18} className="group-hover:translate-y-1 transition-transform" />
+                                        Download
+                                    </a>
+                                </MagneticEffect>
                             </motion.div>
                         ))}
                     </div>

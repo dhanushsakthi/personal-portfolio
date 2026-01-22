@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, Linkedin, Github, Send, Instagram } from 'lucide-react';
 
+import MagneticEffect from './MagneticEffect';
+
 const Contact = () => {
     const contactInfo = [
         { icon: <Phone className="text-primary" />, label: "Phone", value: "6379855062", href: "tel:+916379855062" },
@@ -58,16 +60,17 @@ const Contact = () => {
                             <p className="text-slate-400 mb-6 font-medium">Follow Me</p>
                             <div className="flex gap-6">
                                 {socials.map((social) => (
-                                    <a
-                                        key={social.label}
-                                        href={social.href}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="w-12 h-12 bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center text-slate-400 hover:text-white hover:border-primary hover:bg-primary/20 transition-all duration-300"
-                                        title={social.label}
-                                    >
-                                        {social.icon}
-                                    </a>
+                                    <MagneticEffect key={social.label} strength={0.3}>
+                                        <a
+                                            href={social.href}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="w-12 h-12 bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center text-slate-400 hover:text-white hover:border-primary hover:bg-primary/20 transition-all duration-300"
+                                            title={social.label}
+                                        >
+                                            {social.icon}
+                                        </a>
+                                    </MagneticEffect>
                                 ))}
                             </div>
                         </div>
@@ -114,13 +117,15 @@ const Contact = () => {
                                     placeholder="Your Message..."
                                 ></textarea>
                             </div>
-                            <button
-                                type="submit"
-                                className="w-full btn-primary flex items-center justify-center gap-2 group"
-                            >
-                                Send Message
-                                <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                            </button>
+                            <MagneticEffect strength={0.15}>
+                                <button
+                                    type="submit"
+                                    className="w-full btn-primary flex items-center justify-center gap-2 group"
+                                >
+                                    Send Message
+                                    <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                                </button>
+                            </MagneticEffect>
                         </form>
                     </motion.div>
                 </div>

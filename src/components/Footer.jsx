@@ -1,4 +1,5 @@
 import React from 'react';
+import MagneticEffect from './MagneticEffect';
 
 const Footer = () => {
     return (
@@ -15,10 +16,18 @@ const Footer = () => {
                     </div>
 
                     <div className="flex gap-8 text-sm text-slate-400">
-                        <a href="#home" className="hover:text-primary transition-colors">Home</a>
-                        <a href="#about" className="hover:text-primary transition-colors">About</a>
-                        <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
-                        <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
+                        <MagneticEffect strength={0.2}>
+                            <a href="#home" className="hover:text-primary transition-colors p-1">Home</a>
+                        </MagneticEffect>
+                        <MagneticEffect strength={0.2}>
+                            <a href="#about" className="hover:text-primary transition-colors p-1">About</a>
+                        </MagneticEffect>
+                        <MagneticEffect strength={0.2}>
+                            <a href="#skills" className="hover:text-primary transition-colors p-1">Skills</a>
+                        </MagneticEffect>
+                        <MagneticEffect strength={0.2}>
+                            <a href="#projects" className="hover:text-primary transition-colors p-1">Projects</a>
+                        </MagneticEffect>
                     </div>
 
                     <div className="text-slate-500 text-sm">

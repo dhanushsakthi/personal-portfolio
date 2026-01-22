@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 
+import MagneticEffect from './MagneticEffect';
+
 const Projects = () => {
     const projects = [
         {
@@ -77,24 +79,28 @@ const Projects = () => {
                                 </div>
 
                                 <div className="flex items-center gap-4">
-                                    <a
-                                        href={project.github}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white transition-colors"
-                                    >
-                                        <Github size={18} />
-                                        Code
-                                    </a>
-                                    <a
-                                        href={project.demo}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
-                                    >
-                                        <ExternalLink size={18} />
-                                        Live Demo
-                                    </a>
+                                    <MagneticEffect strength={0.15}>
+                                        <a
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white transition-colors p-1"
+                                        >
+                                            <Github size={18} />
+                                            Code
+                                        </a>
+                                    </MagneticEffect>
+                                    <MagneticEffect strength={0.15}>
+                                        <a
+                                            href={project.demo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors p-1"
+                                        >
+                                            <ExternalLink size={18} />
+                                            Live Demo
+                                        </a>
+                                    </MagneticEffect>
                                 </div>
                             </div>
                         </motion.div>

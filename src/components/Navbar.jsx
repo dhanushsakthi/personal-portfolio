@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Rocket } from 'lucide-react';
 
+import MagneticEffect from './MagneticEffect';
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -35,24 +37,27 @@ const Navbar = () => {
                     {/* Desktop Nav */}
                     <div className="hidden md:flex space-x-8">
                         {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                className="text-slate-300 hover:text-primary transition-colors font-medium border-b-2 border-transparent hover:border-primary pb-1"
-                            >
-                                {link.name}
-                            </a>
+                            <MagneticEffect key={link.name} strength={0.15}>
+                                <a
+                                    href={link.href}
+                                    className="text-slate-300 hover:text-primary transition-colors font-medium border-b-2 border-transparent hover:border-primary pb-1"
+                                >
+                                    {link.name}
+                                </a>
+                            </MagneticEffect>
                         ))}
                     </div>
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden">
-                        <button
-                            onClick={() => setIsOpen(!isOpen)}
-                            className="text-slate-300 hover:text-white"
-                        >
-                            {isOpen ? <X size={28} /> : <Menu size={28} />}
-                        </button>
+                        <MagneticEffect strength={0.2}>
+                            <button
+                                onClick={() => setIsOpen(!isOpen)}
+                                className="text-slate-300 hover:text-white p-2"
+                            >
+                                {isOpen ? <X size={28} /> : <Menu size={28} />}
+                            </button>
+                        </MagneticEffect>
                     </div>
                 </div>
             </div>
