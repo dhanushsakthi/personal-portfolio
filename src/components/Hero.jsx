@@ -7,8 +7,6 @@ import MagneticEffect from './MagneticEffect';
 const Hero = () => {
     return (
         <section id="home" className="relative min-height-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
-            <div className="hero-glow" />
-
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

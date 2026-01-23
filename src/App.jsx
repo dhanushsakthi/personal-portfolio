@@ -6,10 +6,12 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Background from './components/Background';
 
 function App() {
   return (
-    <div className="min-h-screen gradient-bg">
+    <div className="min-h-screen">
+      <Background />
       <Navbar />
       <main>
         <Hero />
