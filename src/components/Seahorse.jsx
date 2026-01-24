@@ -9,39 +9,39 @@ const Seahorse = ({ size = 24, className = "" }) => (
         xmlns="http://www.w3.org/2000/svg"
     >
         <defs>
-            <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <linearGradient id="seahorseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="#3b82f6" />
-                <stop offset="100%" stopColor="#8b5cf6" />
+                <stop offset="60%" stopColor="#8b5cf6" />
+                <stop offset="100%" stopColor="#d946ef" />
             </linearGradient>
         </defs>
-        {/* Dorsal Ridge / Spines */}
-        <path d="M55 18C58 14 62 13 65 14L68 18L72 16L73 22L78 20L78 27L84 25L82 32L88 32L82 40L88 44L80 48L85 54L75 58L78 65L70 65" fill="#8b5cf6" opacity="0.8" />
 
-        {/* Main Body Silhouette */}
-        <path d="M45 15C40 15 35 18 32 22C30 26 30 32 35 36C30 40 25 40 22 41C20 42 18 44 18 46C18 48 20 49 22 49C27 49 33 46 38 42C40 47 45 50 50 50C58 50 64 45 64 35C64 27 58 20 50 20C50 18 48 15 45 15Z" fill="url(#bodyGradient)" />
+        {/* Anatomical Seahorse Shape */}
+        <g fill="url(#seahorseGradient)">
+            {/* 1. Head and Tube Snout - Very recognizable */}
+            <path d="M40 15 C45 12 52 12 55 16 C58 20 57 26 54 29 L75 42 C78 44 76 50 72 50 L52 38 C50 41 45 42 42 40 C38 38 37 31 40 26 Z" />
 
-        {/* Segmented Body / Belly */}
-        <path d="M50 50C45 50 38 55 38 72C38 82 45 90 55 90C65 90 73 82 73 72C73 65 68 58 62 55" fill="none" stroke="url(#bodyGradient)" strokeWidth="12" strokeLinecap="round" />
+            {/* 2. Head Crest */}
+            <path d="M40 15 L38 8 L44 12 L46 6 L50 14 L55 9 L58 16" />
 
-        {/* Segment Lines (Ribs) */}
-        <g stroke="rgba(255,255,255,0.2)" strokeWidth="1">
-            <line x1="42" y1="58" x2="55" y2="58" />
-            <line x1="40" y1="64" x2="58" y2="64" />
-            <line x1="40" y1="70" x2="62" y2="70" />
-            <line x1="42" y1="76" x2="65" y2="76" />
-            <line x1="45" y1="82" x2="62" y2="82" />
+            {/* 3. Body Curve and Coiled Prehensile Tail */}
+            <path d="M42 40 C35 50 35 60 45 65 C55 70 60 75 60 85 C60 95 52 98 45 98 C35 98 28 92 28 85 C28 78 34 72 40 72 C46 72 50 77 50 82 C50 87 46 91 42 91 C39 91 37 89 37 87" fill="none" stroke="url(#seahorseGradient)" strokeWidth="8" strokeLinecap="round" />
+
+            {/* 4. Dorsal Spine Detail */}
+            <path d="M40 30 L35 33 L38 40 L32 45 L35 55 L28 60 L32 70 L28 80 L35 90" fill="none" stroke="url(#seahorseGradient)" strokeWidth="2" strokeLinecap="round" />
         </g>
 
-        {/* Coiled Tail */}
-        <path d="M55 90C42 90 32 80 32 68C32 58 38 50 48 50C55 50 60 55 60 62C60 68 55 74 48 74C43 74 38 70 38 65" fill="none" stroke="url(#bodyGradient)" strokeWidth="6" strokeLinecap="round" />
-
         {/* Eye */}
-        <circle cx="53" cy="28" r="5" fill="#111" />
-        <circle cx="54.5" cy="26.5" r="1.5" fill="white" />
-        <circle cx="52.2" cy="29.2" r="0.6" fill="white" />
+        <circle cx="48" cy="22" r="4" fill="#0f172a" />
+        <circle cx="49.5" cy="20.5" r="1.5" fill="white" />
 
-        {/* Small Fin on back */}
-        <path d="M68 50C75 45 82 48 85 58C82 65 75 68 68 65Z" fill="#a78bfa" opacity="0.6" />
+        {/* Body Segments */}
+        <g stroke="white" strokeWidth="0.5" opacity="0.2">
+            <line x1="38" y1="48" x2="48" y2="48" />
+            <line x1="35" y1="56" x2="55" y2="56" />
+            <line x1="35" y1="64" x2="58" y2="64" />
+            <line x1="38" y1="72" x2="55" y2="72" />
+        </g>
     </svg>
 );
 
