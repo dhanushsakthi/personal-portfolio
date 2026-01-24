@@ -1,5 +1,6 @@
 import React from 'react';
 import MagneticEffect from './MagneticEffect';
+import Seahorse from './Seahorse';
 
 const Footer = () => {
     return (
@@ -7,9 +8,12 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="text-center md:text-left">
-                        <h3 className="text-xl font-bold bg-gradient-to-r from-white to-primary bg-clip-text text-transparent mb-2">
-                            S.DHANUSH
-                        </h3>
+                        <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
+                            <Seahorse size={20} className="text-primary" />
+                            <h3 className="text-xl font-bold bg-gradient-to-r from-white to-primary bg-clip-text text-transparent">
+                                S.DHANUSH
+                            </h3>
+                        </div>
                         <p className="text-slate-500 text-sm italic">
                             "Engineering excellence through innovation and precision."
                         </p>

@@ -18,8 +18,8 @@ const Hero = () => {
                     <h2 className="text-primary font-medium tracking-[0.4em] uppercase mb-10 text-xs sm:text-sm md:text-base">
                         AI & Data Science Specialist
                     </h2>
-                    <h1 className="text-6xl md:text-9xl font-extrabold mb-10 leading-tight tracking-tighter text-white font-display flex flex-col items-center justify-center">
-                        <Seahorse className="text-primary mb-6 animate-subtle-float" size={84} />
+                    <h1 className="text-6xl md:text-9xl font-extrabold mb-10 leading-tight tracking-tighter text-white font-display flex items-center justify-center gap-6">
+                        <Seahorse className="text-primary animate-subtle-float" size={64} />
                         <div>Dhanush <span className="text-primary">Sakthi</span></div>
                     </h1>
                     <p className="text-lg md:text-2xl text-slate-400 max-w-3xl mx-auto mb-16 leading-relaxed font-light">
